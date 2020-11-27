@@ -1,0 +1,17 @@
+<div class="row row-cols-4 exam-button-group">
+  <div class="col" *ngFor="let exam of exams$ | async">
+    <button type="button" class="btn btn-dark btn-lg btn-block" (click)="selectExam(exam.id)" >{{ exam.name }}</button>
+  </div>
+</div>
+
+<br>
+
+<pre *ngIf="result" >
+  <span *ngFor="let question of result.questions">
+    <span *ngFor="let q of question">
+      {{ q.question }}
+    </span>
+  </span>
+</pre>
+
+<!-- <app-step-form></app-step-form> -->
