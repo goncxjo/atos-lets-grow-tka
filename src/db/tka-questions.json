@@ -1,0 +1,39 @@
+{
+  "exams" : [
+    {
+      "name": "Java",
+      "questions": [
+        {
+          "question": "Create a Java class that given a number with 5 digits, returns true if it's a palindromic number (means \"capicúa\" in Spanish and \"nombre palindrome\" in French), otherwise return false."
+        },
+        {
+          "question": "Answer the following questions.",
+          "questions": [
+            {
+              "question": "You want to find out the value of the last element of an array. You write the following code. What will happen when you compile and run it?",
+              "code": "public class MyAr { public static void main(String argv[]){ int[] i = new int[5]; System.out.println(i[5]); }}",
+              "options": [
+                "An error at compile time",
+                "An error at run time",
+                "The value 0 will be output",
+                "The string \"null\" will be output"
+              ]
+            },
+            {
+              "question": "Which of the following statements about abstract classes in java are true? (Select all correct answers)",
+              "options": [
+                "A class must be declared abstract if one or more methods are abstract.",
+                "A class can be declared abstract if one or more methods are abstract.",
+                "A class can be declared abstract without abstract methods.",
+                "An abstract class cannot be instanciated."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    { "name": "PHP" },
+    { "name": "PL/SQL" }
+  ]
+}
