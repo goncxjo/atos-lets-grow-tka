@@ -21,7 +21,8 @@ export class HomeComponent implements OnInit {
   selectExam(id) {
     console.log(id);
     this.examsService.getById(id).subscribe(r => {
-      this.result = r
+      this.result = r.questions;
+
       console.log(r);
       console.log(this.result);
     });

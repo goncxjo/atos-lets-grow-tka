@@ -6,12 +6,25 @@
 
 <br>
 
-<pre *ngIf="result" >
-  <span *ngFor="let question of result.questions">
-    <span *ngFor="let q of question">
-      {{ q.question }}
-    </span>
-  </span>
-</pre>
+<!--
+  <div id="question-editor-js"></div>
+  <div id="answer-editor-js"></div>
+-->
+
+<div class="card card-question" *ngFor="let q of result">
+  <div class="card-header">{{ q.question }}</div>
+  <div class="card-body">
+    <div *ngIf="q.question">
+      <div class="card card-question" *ngFor="let sq of q.questions">
+        <div class="card-header">{{ sq.question }}</div>
+        <div class="card-body" *ngIf="q.questions" >
+          Sub-Answer...
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!q.questions">
+      Answer...
+    </div>
+</div>
 
 <!-- <app-step-form></app-step-form> -->
