@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching for an exam...">
+      <br>
+    </div>
+  </div>
+  
+  <div class="row row-cols-4 exam-button-group">
+    <div class="col" *ngFor="let exam of exams | nameContains : searchText">
+      <button type="button" class="btn btn-dark btn-lg btn-block btn-exam" [routerLink]="['.', exam.id]" >{{ exam.name }}</button>
+    </div>
+  </div>

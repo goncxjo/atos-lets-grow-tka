@@ -1,30 +1,9 @@
-<div class="row row-cols-4 exam-button-group">
-  <div class="col" *ngFor="let exam of exams$ | async">
-    <button type="button" class="btn btn-dark btn-lg btn-block" (click)="selectExam(exam.id)" >{{ exam.name }}</button>
+<div class="jumbotron">
+    <h1 class="display-4">Welcome.</h1>
+    <p class="lead">This is a prototype app named Technical Knowledge Assessment.</p>
+    <hr class="my-4">
+    <p>Click in the button below to start.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button" [routerLink]="['exams']">Get started</a>
+    </p>
   </div>
-</div>
-
-<br>
-
-<!--
-  <div id="question-editor-js"></div>
-  <div id="answer-editor-js"></div>
--->
-
-<div class="card card-question" *ngFor="let q of result">
-  <div class="card-header">{{ q.question }}</div>
-  <div class="card-body">
-    <div *ngIf="q.question">
-      <div class="card card-question" *ngFor="let sq of q.questions">
-        <div class="card-header">{{ sq.question }}</div>
-        <div class="card-body" *ngIf="q.questions" >
-          Sub-Answer...
-        </div>
-      </div>
-    </div>
-    <div *ngIf="!q.questions">
-      Answer...
-    </div>
-</div>
-
-<!-- <app-step-form></app-step-form> -->

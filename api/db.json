@@ -12,7 +12,7 @@
           "questions": [
             {
               "question": "You want to find out the value of the last element of an array. You write the following code. What will happen when you compile and run it?",
-              "code": "public class MyAr { public static void main(String argv[]){ int[] i = new int[5]; System.out.println(i[5]); }}",
+              "code": "public class MyAr{\n\tpublic static void main(String argv[]) {\n\t\tint[] i = new int[5];\n\t\tSystem.out.println(i[5]);\n\t}\n}",
               "options": [
                 "An error at compile time",
                 "An error at run time",
@@ -33,17 +33,18 @@
         }
       ]
     },
-    { 
-      "id": 2,
-      "name": "C#.NET"
-    },
-    { 
-      "id": 3,
-      "name": "PHP"
-    },
-    {
-      "id": 4,
-      "name": "PL/SQL"
-    }
+    { "id": 2, "name": "COBOL I"},
+    { "id": 3, "name": "COBOL Junior"},
+    { "id": 4, "name": "JAVA, PSA, VW"},
+    { "id": 5, "name": "PHP"},
+    { "id": 6, "name": "PL/SQL-SPA"},
+    { "id": 7, "name": "PL/SQL"},
+    { "id": 8, "name": "SEPSA JAVA"},
+    { "id": 9, "name": "COBOL SENIOR"},
+    { "id": 10, "name": "C#.NET"},
+    { "id": 11, "name": "SQL"},
+    { "id": 12, "name": "UNIX (Jr)"},
+    { "id": 13, "name": "UNIX NIVEL II"},
+    { "id": 14, "name": "Powercenter"}
   ]
 }

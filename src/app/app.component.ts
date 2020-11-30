@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Technical Knowledge Assessment';
+  currentYear: number = new Date().getFullYear();
 }
