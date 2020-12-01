@@ -23,13 +23,17 @@ import { ExamFormComponent } from './exam-form/exam-form.component';
 import { NameContainsPipe } from './name-contains.pipe';
 import { NameStartsWithPipe } from './name-starts-with.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExamsListComponent } from './exams-list/exams-list.component';
+import { ExamsEditComponent } from './exams-edit/exams-edit.component';
 
 @NgModule({
   declarations: [
     ExamsGroupButtonComponent,
     ExamFormComponent,
     NameContainsPipe,
-    NameStartsWithPipe
+    NameStartsWithPipe,
+    ExamsListComponent,
+    ExamsEditComponent
   ],
   imports: [
     CommonModule,

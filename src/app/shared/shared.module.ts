@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { TimerComponent } from './timer/timer.component';
 
 const MODULES = [
-  CommonModule
+  CommonModule,
+  NgbModule
 ]
 
 const PRIVATE_COMPONENTS = [

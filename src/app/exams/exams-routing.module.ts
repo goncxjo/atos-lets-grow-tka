@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ExamFormComponent } from './exam-form/exam-form.component';
-import { ExamsGroupButtonComponent } from './exams-group-button/exams-group-button.component';
+import { ExamsListComponent } from './exams-list/exams-list.component';
 import { GetByIdResolver } from './get-by-id.resolver';
 import { GetListResolver } from './get-list.resolver';
 
@@ -11,13 +11,13 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: ExamsGroupButtonComponent,
+        component: ExamsListComponent,
         resolve: {
           entity: GetListResolver
         }
       },
       {
-        path: ':id',
+        path: ':id/candidate',
         component: ExamFormComponent,
         resolve: {
           entity: GetByIdResolver

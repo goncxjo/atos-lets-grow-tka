@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { SharedModule } from '../shared/shared.module';
 
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
 const PRIVATE_COMPONENTS = [
 ];
@@ -20,7 +21,8 @@ const PUBLIC_COMPONENTS = [
   imports: [
     SharedModule,
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    RouterModule
   ],
   exports: [
     ...PUBLIC_COMPONENTS

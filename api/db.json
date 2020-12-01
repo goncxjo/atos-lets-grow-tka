@@ -3,6 +3,11 @@
     {
       "id": 1,
       "name": "Java",
+      "seniority": "Senior",
+      "software": "Java",
+      "difficulty": "Hard",
+      "createdDate": "2020-12-01T14:36:40.613Z",
+      "modifiedDate": "",
       "questions": [
         {
           "question": "Create a Java class that given a number with 5 digits, returns true if it's a palindromic number (means \"capicúa\" in Spanish and \"nombre palindrome\" in French), otherwise return false."
@@ -33,18 +38,18 @@
         }
       ]
     },
-    { "id": 2, "name": "COBOL I"},
-    { "id": 3, "name": "COBOL Junior"},
-    { "id": 4, "name": "JAVA, PSA, VW"},
-    { "id": 5, "name": "PHP"},
-    { "id": 6, "name": "PL/SQL-SPA"},
-    { "id": 7, "name": "PL/SQL"},
-    { "id": 8, "name": "SEPSA JAVA"},
-    { "id": 9, "name": "COBOL SENIOR"},
-    { "id": 10, "name": "C#.NET"},
-    { "id": 11, "name": "SQL"},
-    { "id": 12, "name": "UNIX (Jr)"},
-    { "id": 13, "name": "UNIX NIVEL II"},
-    { "id": 14, "name": "Powercenter"}
+    { "id": 2, "name": "COBOL I", "seniority": "Junior", "software": "Cobol", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 3, "name": "COBOL Junior", "seniority": "Junior", "software": "Cobol", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 4, "name": "JAVA, PSA, VW", "seniority": "Senior", "software": "Java", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 5, "name": "PHP", "seniority": "Senior", "software": "PHP", "difficulty": "Regular", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 6, "name": "PL/SQL-SPA", "seniority": "Senior", "software": "PL/SQL", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 7, "name": "PL/SQL", "seniority": "Senior", "software": "PL/SQL", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 8, "name": "SEPSA JAVA", "seniority": "Senior", "software": "Java", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 9, "name": "COBOL SENIOR", "seniority": "Senior", "software": "Cobol", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 10, "name": "C#.NET", "seniority": "Semi-Senior", "software": "C#", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 11, "name": "SQL", "seniority": "Senior", "software": "SQL", "difficulty": "Regular", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 12, "name": "UNIX (Jr)", "seniority": "Junior", "software": "Unix", "difficulty": "Easy", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 13, "name": "UNIX NIVEL II", "seniority": "Semi-Senior", "software": "Unix", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 14, "name": "Powercenter", "seniority": "Senior", "software": "Powercenter", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613" }
   ]
 }

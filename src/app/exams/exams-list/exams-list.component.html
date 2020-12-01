@@ -1,0 +1,62 @@
+<div class="row mb-2">
+    <h3>
+        Exams
+    </h3>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="alert alert-warning" role="alert" *ngIf="noData">
+            No data
+        </div>
+        <div class="table-responsive" *ngIf="!noData">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Seniority</th>
+                        <th>Software</th>
+                        <th>Difficulty</th>
+                        <th>Created Date</th>
+                        <th>Modified Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exam of exams">
+                        <td>{{ exam.id }}</td>
+                        <td>{{ exam.seniority }}</td>
+                        <td>{{ exam.software }}</td>
+                        <td>{{ exam.difficulty }}</td>
+                        <td>{{ exam.createdDate | date:'dd/MM/yyyy' }}</td>
+                        <td>{{ exam.modifiedDate | date:'dd/MM/yyyy hh:mm:ss' }}</td>
+                        <td class="btn-group-sm">
+                            <button class="btn btn-link" placement="top" ngbTooltip="View" [routerLink]="['.', exam.id]">
+                                <span class="fa fa-eye"></span>
+                            </button>
+                            <button class="btn btn-link" placement="top" ngbTooltip="Edit" [routerLink]="['.', exam.id, 'edit']">
+                                <span class="fa fa-edit"></span>
+                            </button>
+                            <button class="btn btn-link" placement="top" ngbTooltip="Delete">
+                                <span class="fa fa-trash"></span>
+                            </button>
+                            <button class="btn btn-link" placement="top" ngbTooltip="View as candidate"[routerLink]="['.', exam.id, 'candidate']">
+                                <span class="fa fa-vial"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="d-flex justify-content-between p-2">
+            <button class="btn btn-xs btn-primary">
+                <span class="fa fa-plus"></span> New
+            </button>
+        </div>
+    </div>
+</div>

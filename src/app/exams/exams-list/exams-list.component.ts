@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Exam } from '../../api/models/exam';
+import { Exam } from 'src/app/api/models/exam';
 
 @Component({
-  selector: 'app-exams-group-button',
-  templateUrl: './exams-group-button.component.html',
-  styleUrls: ['./exams-group-button.component.sass']
+  selector: 'app-exams-list',
+  templateUrl: './exams-list.component.html',
+  styleUrls: ['./exams-list.component.sass']
 })
-export class ExamsGroupButtonComponent implements OnInit {
+export class ExamsListComponent implements OnInit {
   exams: Exam[]
-  searchText
   
   constructor(
     private activatedRoute: ActivatedRoute
@@ -19,5 +18,9 @@ export class ExamsGroupButtonComponent implements OnInit {
     this.activatedRoute.data.subscribe((data: { entity: Exam[] }) => {
       this.exams = data.entity;
     })
+  }
+
+  get noData() {
+    return this.exams.length === 0
   }
 }

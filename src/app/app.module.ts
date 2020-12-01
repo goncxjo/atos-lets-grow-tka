@@ -12,11 +12,14 @@ import { SharedModule } from './shared/shared.module';
 import { ExamsModule } from './exams/exams.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
+import { CanditatesListComponent } from './candidates/canditates-list/canditates-list.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    CanditatesListComponent,
   ],
   imports: [
     HttpClientModule,
@@ -28,6 +31,7 @@ import { environment } from 'src/environments/environment';
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    NgbModule
   ],
   providers: [
     { provide: 'BASE_API_URL', useValue: environment.apiUrl }
