@@ -17,7 +17,6 @@ export class ExamFormComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.data.subscribe((data: { entity: Exam }) => {
       this.exam = data.entity;
-      console.log(this.exam)
     })
   }
 }

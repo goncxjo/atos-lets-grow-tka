@@ -1,7 +1,7 @@
 <div class="card card-question" *ngFor="let question of questions; let ioq = index;">
 
     <div class="card-header">
-        <div>{{ getIndexLetter(question.indexFormat, ioq, question.question) }}</div>
+        <div>{{ getIndexLetter(ioq, question.question) }}</div>
         <br />
         <div *ngIf="question.code">
             <pre>{{ question.code }}</pre>
@@ -16,7 +16,7 @@
         <div *ngIf="!question.questions && !question.options">
             <textarea class="question-textarea" placeholder="Type here your answer..."></textarea>
         </div>
-        <app-questions [questions]="question.questions" *ngIf="question.questions"></app-questions>
+        <app-questions [questions]="question.questions" [depthLevel]="depthLevel + 1" *ngIf="question.questions"></app-questions>
     </div>
 
 </div>
