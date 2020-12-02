@@ -6,37 +6,4 @@
     <app-timer></app-timer>
   </div>
 </div>
-
-<div class="card card-question" *ngFor="let q of exam.questions; let ioq_1 = index;">
-  <div class="card-header">{{ (ioq_1+1) + ') ' + q.question }}</div>
-  <div class="card-body">
-
-    <div *ngIf="q.question">
-      <div class="card card-question" *ngFor="let sq of q.questions; let ioq_2 = index;">
-
-        <div class="card-header">
-          <div>{{ getIndexLetter(ioq_2, sq.question) }}</div>
-          <br />
-          <div *ngIf="sq.code">
-            <pre>{{ sq.code }}</pre>
-          </div>
-        </div>
-
-        <div class="card-body" *ngIf="q.questions">
-          <div class="form-check" *ngFor="let opt of sq.options">
-            <input class="form-check-input" type="radio" value="opt">
-            <label class="form-check-label">{{ opt }}</label>
-          </div>
-          <div *ngIf="!sq.options">
-            Sub-Answer...
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div *ngIf="!q.questions">
-      Answer...
-    </div>
-
-  </div>
-</div>
+<app-questions [questions]="exam.questions"></app-questions>

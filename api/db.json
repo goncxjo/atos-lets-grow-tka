@@ -10,12 +10,15 @@
       "modifiedDate": "",
       "questions": [
         {
-          "question": "Create a Java class that given a number with 5 digits, returns true if it's a palindromic number (means \"capicúa\" in Spanish and \"nombre palindrome\" in French), otherwise return false."
+          "question": "Create a Java class that given a number with 5 digits, returns true if it's a palindromic number (means \"capicúa\" in Spanish and \"nombre palindrome\" in French), otherwise return false.",
+          "indexFormat": "1"
         },
         {
           "question": "Answer the following questions.",
+          "indexFormat": "1",
           "questions": [
             {
+              "indexFormat": "a",
               "question": "You want to find out the value of the last element of an array. You write the following code. What will happen when you compile and run it?",
               "code": "public class MyAr{\n\tpublic static void main(String argv[]) {\n\t\tint[] i = new int[5];\n\t\tSystem.out.println(i[5]);\n\t}\n}",
               "options": [
@@ -26,6 +29,7 @@
               ]
             },
             {
+              "indexFormat": "a",
               "question": "Which of the following statements about abstract classes in java are true? (Select all correct answers)",
               "options": [
                 "A class must be declared abstract if one or more methods are abstract.",
@@ -51,5 +55,12 @@
     { "id": 12, "name": "UNIX (Jr)", "seniority": "Junior", "software": "Unix", "difficulty": "Easy", "createdDate": "2020-12-01T14:36:40.613Z" },
     { "id": 13, "name": "UNIX NIVEL II", "seniority": "Semi-Senior", "software": "Unix", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
     { "id": 14, "name": "Powercenter", "seniority": "Senior", "software": "Powercenter", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613" }
+  ],
+  "candidates": [
+    { "id": 1, "firstName": "Gonzalo", "lastName": "Moreira" },
+    { "id": 2, "firstName": "Miguel", "lastName": "Santillán" },
+    { "id": 3, "firstName": "Renard", "lastName": "Laffitte" },
+    { "id": 4, "firstName": "Germán", "lastName": "Schönfeld" }
+
   ]
 }

@@ -25,6 +25,7 @@ import { NameStartsWithPipe } from './name-starts-with.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExamsListComponent } from './exams-list/exams-list.component';
 import { ExamsEditComponent } from './exams-edit/exams-edit.component';
+import { QuestionsComponent } from './questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ExamsEditComponent } from './exams-edit/exams-edit.component';
     NameContainsPipe,
     NameStartsWithPipe,
     ExamsListComponent,
-    ExamsEditComponent
+    ExamsEditComponent,
+    QuestionsComponent
   ],
   imports: [
     CommonModule,

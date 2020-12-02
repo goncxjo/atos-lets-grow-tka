@@ -20,8 +20,4 @@ export class ExamFormComponent implements OnInit {
       console.log(this.exam)
     })
   }
-
-  getIndexLetter(index, question) {
-    return String.fromCharCode(index + 97) + ') ' + question
-  }
 }
