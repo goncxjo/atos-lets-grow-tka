@@ -2,8 +2,8 @@
 
     <div class="card-header">
         <div>{{ getIndexLetter(ioq, question.question) }}</div>
-        <br />
         <div *ngIf="question.code">
+            <br />
             <pre>{{ question.code }}</pre>
         </div>
     </div>

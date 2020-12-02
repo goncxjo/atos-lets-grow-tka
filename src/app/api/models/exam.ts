@@ -1,3 +1,5 @@
+import { Question } from "./question";
+
 export interface Exam {
     id: number,
     name: string,
@@ -6,5 +8,5 @@ export interface Exam {
     difficulty: string,
     createdDate: Date,
     modifiedDate: Date,
-    questions: any
+    questions: Question[]
 }
