@@ -1,4 +1,5 @@
-<div class="jumbotron">
+<!--
+  <div class="jumbotron">
     <h1 class="display-4">Welcome.</h1>
     <p class="lead">This is a prototype app named Technical Knowledge Assessment.</p>
     <hr class="my-4">
@@ -7,3 +8,17 @@
       <a class="btn btn-primary btn-lg" href="#" role="button" [routerLink]="['exams']">Get started</a>
     </p>
   </div>
+-->
+
+<div class="row">
+  <div class="col">
+    <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching for an exam...">
+    <br>
+  </div>
+</div>
+
+<div class="row row-cols-4 exam-button-group">
+  <div class="col" *ngFor="let exam of exams | nameContains : searchText">
+    <button type="button" class="btn btn-dark btn-lg btn-block btn-exam" [routerLink]="['.', exam.id]" >{{ exam.name }}</button>
+  </div>
+</div>
