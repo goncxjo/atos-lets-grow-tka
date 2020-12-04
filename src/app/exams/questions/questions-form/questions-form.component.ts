@@ -1,19 +1,19 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-questions',
-  templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.sass']
+  selector: 'app-questions-form',
+  templateUrl: './questions-form.component.html',
+  styleUrls: ['./questions-form.component.sass']
 })
-export class QuestionsComponent implements OnInit {
+export class QuestionsFormComponent implements OnInit {
   @Input() questions;
   @Input() depthLevel = 1;
-  
+
   constructor() { }
 
   ngOnInit() {
   }
-  
+
   getIndexLetter(index, question) {
     switch (this.depthLevel) {
       case 1:

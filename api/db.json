@@ -1,62 +1,64 @@
 {
   "exams" : [
-    {
-      "id": 1,
-      "name": "Java",
-      "seniority": "Senior",
-      "software": "Java",
-      "difficulty": "Hard",
-      "createdDate": "2020-12-01T14:36:40.613Z",
-      "modifiedDate": "",
-      "questions": [
-        {
-          "question": "Create a Java class that given a number with 5 digits, returns true if it's a palindromic number (means \"capicúa\" in Spanish and \"nombre palindrome\" in French), otherwise return false.",
-        },
-        {
-          "question": "Answer the following questions.",
-          "questions": [
-            {
-              "question": "You want to find out the value of the last element of an array. You write the following code. What will happen when you compile and run it?",
-              "code": "public class MyAr{\n\tpublic static void main(String argv[]) {\n\t\tint[] i = new int[5];\n\t\tSystem.out.println(i[5]);\n\t}\n}",
-              "options": [
-                "An error at compile time",
-                "An error at run time",
-                "The value 0 will be output",
-                "The string \"null\" will be output"
-              ]
-            },
-            {
-              "question": "Which of the following statements about abstract classes in java are true? (Select all correct answers)",
-              "options": [
-                "A class must be declared abstract if one or more methods are abstract.",
-                "A class can be declared abstract if one or more methods are abstract.",
-                "A class can be declared abstract without abstract methods.",
-                "An abstract class cannot be instanciated."
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    { "id": 2, "name": "COBOL I", "seniority": "Junior", "software": "Cobol", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 3, "name": "COBOL Junior", "seniority": "Junior", "software": "Cobol", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 4, "name": "JAVA, PSA, VW", "seniority": "Senior", "software": "Java", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 5, "name": "PHP", "seniority": "Senior", "software": "PHP", "difficulty": "Regular", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 6, "name": "PL/SQL-SPA", "seniority": "Senior", "software": "PL/SQL", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 7, "name": "PL/SQL", "seniority": "Senior", "software": "PL/SQL", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 8, "name": "SEPSA JAVA", "seniority": "Senior", "software": "Java", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 9, "name": "COBOL SENIOR", "seniority": "Senior", "software": "Cobol", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 10, "name": "C#.NET", "seniority": "Semi-Senior", "software": "C#", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 11, "name": "SQL", "seniority": "Senior", "software": "SQL", "difficulty": "Regular", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 12, "name": "UNIX (Jr)", "seniority": "Junior", "software": "Unix", "difficulty": "Easy", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 13, "name": "UNIX NIVEL II", "seniority": "Semi-Senior", "software": "Unix", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613Z" },
-    { "id": 14, "name": "Powercenter", "seniority": "Senior", "software": "Powercenter", "difficulty": "Hard", "createdDate": "2020-12-01T14:36:40.613" }
+    { "id": 1, "vendor": "Volkswagen", "line": "B&PS", "name": "Java", "seniority": "Senior", "software": "Java", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613Z", "modifiedDate": "", "questions": [1,2] },
+    { "id": 2, "vendor": "BAPRO", "line": "B&PS", "name": "COBOL I", "seniority": "Junior", "software": "Cobol", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 3, "vendor": "AFIP", "line": "B&PS", "name": "COBOL Junior", "seniority": "Junior", "software": "Cobol", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 4, "vendor": "PSA", "line": "B&PS",  "name": "JAVA, PSA, VW", "seniority": "Senior", "software": "Java", "difficulty": 3, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 5, "vendor": "Freba", "line": "B&PS", "name": "PHP", "seniority": "Senior", "software": "PHP", "difficulty": 3, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 6, "vendor": "Renault", "line": "B&PS", "name": "PL/SQL-SPA", "seniority": "Senior", "software": "PL/SQL", "difficulty": 4, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 7, "vendor": "Telecom", "line": "B&PS", "name": "PL/SQL", "seniority": "Senior", "software": "PL/SQL", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 8, "vendor": "SEPSA", "line": "B&PS", "name": "SEPSA JAVA", "seniority": "Senior", "software": "Java", "difficulty": 2, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 9, "vendor": "Aconcagua", "line": "B&PS", "name": "COBOL SENIOR", "seniority": "Senior", "software": "Cobol", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 10, "vendor": "Molinos", "line": "B&PS", "name": "C#.NET", "seniority": "Semi-Senior", "software": "C#", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 11, "vendor": "CNP", "line": "B&PS", "name": "SQL", "seniority": "Senior", "software": "SQL", "difficulty": 3, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 12, "vendor": "CONDIS", "line": "B&PS", "name": "UNIX (Jr)", "seniority": "Junior", "software": "Unix", "difficulty": 1, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 13, "vendor": "CONDIS", "line": "B&PS", "name": "UNIX NIVEL II", "seniority": "Semi-Senior", "software": "Unix", "difficulty": 4, "createdDate": "2020-12-01T14:36:40.613Z" },
+    { "id": 14, "vendor": "Interno", "line": "B&PS", "name": "Powercenter", "seniority": "Senior", "software": "Powercenter", "difficulty": 5, "createdDate": "2020-12-01T14:36:40.613" }
   ],
   "candidates": [
-    { "id": 1, "firstName": "Gonzalo", "lastName": "Moreira" },
-    { "id": 2, "firstName": "Miguel", "lastName": "Santillán" },
-    { "id": 3, "firstName": "Renard", "lastName": "Laffitte" },
-    { "id": 4, "firstName": "Germán", "lastName": "Schönfeld" }
-
+    { "id": 1, "firstName": "Gonzalo", "lastName": "Moreira", "position": "developer" },
+    { "id": 2, "firstName": "Miguel", "lastName": "Santillán", "position": "developer" },
+    { "id": 3, "firstName": "Renard", "lastName": "Laffitte", "position": "developer" },
+    { "id": 4, "firstName": "Germán", "lastName": "Schönfeld", "position": "developer" }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "Create a Java class that given a number with 5 digits, returns true if it's a palindromic number (means \"capicúa\" in Spanish and \"nombre palindrome\" in French), otherwise return false."
+    },
+    {
+      "id": 2,
+      "question": "Answer the following questions.",
+      "questions": [3,4]
+    },
+    {
+      "id": 3,
+      "question": "You want to find out the value of the last element of an array. You write the following code. What will happen when you compile and run it?",
+      "code": "public class MyAr{\n\tpublic static void main(String argv[]) {\n\t\tint[] i = new int[5];\n\t\tSystem.out.println(i[5]);\n\t}\n}",
+      "options": [
+        "An error at compile time",
+        "An error at run time",
+        "The value 0 will be output",
+        "The string \"null\" will be output"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which of the following statements about abstract classes in java are true? (Select all correct answers)",
+      "options": [
+        "A class must be declared abstract if one or more methods are abstract.",
+        "A class can be declared abstract if one or more methods are abstract.",
+        "A class can be declared abstract without abstract methods.",
+        "An abstract class cannot be instanciated."
+      ]
+    }
+  ],
+  "roles": [
+    { "id": 1, "name": "Admin", "details": "Has admin rights"},
+    { "id": 2, "name": "Editor", "details": "It can create, modify and delete exams"},
+    { "id": 3, "name": "Recruiter", "details": "It can create, modify, delete, send invite to candidates."},
+    { "id": 4, "name": "Resource Manager", "details": "It can create, modify and delete resource requests."},
+    { "id": 5, "name": "Approver", "details": "It can approve (or not) exams."},
+    { "id": 6, "name": "Candidate", "details": "It can write recieved exams."}
   ]
 }

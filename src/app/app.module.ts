@@ -12,26 +12,28 @@ import { SharedModule } from './shared/shared.module';
 import { ExamsModule } from './exams/exams.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
-import { CanditatesListComponent } from './candidates/canditates-list/canditates-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CandidatesModule } from './candidates/candidates.module';
+import { SecurityModule } from './security/security.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CanditatesListComponent,
   ],
   imports: [
     HttpClientModule,
     SharedModule,
     LayoutModule,
-    ExamsModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    ExamsModule,
+    SecurityModule,
+    CandidatesModule,
   ],
   providers: [
     { provide: 'BASE_API_URL', useValue: environment.apiUrl }

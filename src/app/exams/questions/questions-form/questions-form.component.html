@@ -1,0 +1,22 @@
+<div class="card card-question" *ngFor="let question of questions; let ioq = index;">
+
+  <div class="card-header">
+      <div>{{ getIndexLetter(ioq, question.question) }}</div>
+      <div *ngIf="question.code">
+          <br />
+          <pre>{{ question.code }}</pre>
+      </div>
+  </div>
+
+  <div class="card-body">
+      <div class="form-check" *ngFor="let option of question.options">
+          <input class="form-check-input" type="radio" value="option">
+          <label class="form-check-label">{{ option }}</label>
+      </div>
+      <div *ngIf="!question.questions && !question.options">
+          <textarea class="question-textarea" placeholder="Type here your answer..."></textarea>
+      </div>
+      <app-questions-form [questions]="question.questions" [depthLevel]="depthLevel + 1" *ngIf="question.questions"></app-questions-form>
+  </div>
+
+</div>

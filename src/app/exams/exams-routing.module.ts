@@ -7,32 +7,24 @@ import { GetListResolver } from './get-list.resolver';
 
 const routes: Routes = [
   {
-    path: 'exams',
-    children: [
-      {
-        path: '',
-        component: ExamsListComponent,
-        resolve: {
-          entity: GetListResolver
-        }
-      },
-      {
-        path: ':id/candidate',
-        component: ExamFormComponent,
-        resolve: {
-          entity: GetByIdResolver
-        }
-      },
-      // { path: '**', redirectTo: '', pathMatch: 'full' }
-    ]
-  }
+    path: '',
+    component: ExamsListComponent,
+    resolve: {
+      entity: GetListResolver
+    }
+  },
+  {
+    path: ':id/candidate',
+    component: ExamFormComponent,
+    resolve: {
+      entity: GetByIdResolver
+    }
+  },
+  // { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(
-    routes
-    , { enableTracing: true }
-    )],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
   providers: [
     GetListResolver,

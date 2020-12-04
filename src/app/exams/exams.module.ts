@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // import { MatToolbarModule } from '@angular/material/toolbar';
 // import { MatStepperModule } from '@angular/material/stepper';
@@ -25,7 +21,8 @@ import { NameStartsWithPipe } from './name-starts-with.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExamsListComponent } from './exams-list/exams-list.component';
 import { ExamsEditComponent } from './exams-edit/exams-edit.component';
-import { QuestionsComponent } from './questions/questions.component';
+import { QuestionsFormComponent } from './questions/questions-form/questions-form.component';
+import { QuestionsListComponent } from './questions/questions-list/questions-list.component';
 
 @NgModule({
   declarations: [
@@ -35,20 +32,17 @@ import { QuestionsComponent } from './questions/questions.component';
     NameStartsWithPipe,
     ExamsListComponent,
     ExamsEditComponent,
-    QuestionsComponent
+    QuestionsFormComponent,
+    QuestionsListComponent
   ],
   imports: [
     CommonModule,
-    ExamsRoutingModule,
-    HttpClientModule,
     SharedModule,
     LayoutModule,
-    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
     ExamsRoutingModule,
-    BrowserAnimationsModule,
-    FontAwesomeModule
   ]
 })
 export class ExamsModule { }

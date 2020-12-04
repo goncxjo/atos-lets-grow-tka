@@ -1,0 +1,70 @@
+<div class="row mb-2">
+  <h3>
+    Candidates
+  </h3>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="alert alert-warning" role="alert" *ngIf="noData">
+      No data
+    </div>
+    <div class="table-responsive" *ngIf="!noData">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let candidate of candidates">
+            <td>{{ candidate.id }}</td>
+            <td>{{ candidate.firstName }}</td>
+            <td>{{ candidate.lastName }}</td>
+            <td>{{ candidate.position }}</td>
+            <td class="btn-group-sm">
+              <button class="btn btn-link" placement="top" ngbTooltip="View" [routerLink]="['.', candidate.id]" disabled>
+                <span class="fa fa-eye"></span>
+              </button>
+              <button class="btn btn-link" placement="top" ngbTooltip="Edit" [routerLink]="['.', candidate.id, 'edit']" disabled>
+                <span class="fa fa-edit"></span>
+              </button>
+              <button class="btn btn-link" placement="top" ngbTooltip="Delete" disabled>
+                <span class="fa fa-trash"></span>
+              </button>
+              <button class="btn btn-link" placement="top" ngbTooltip="Delete" disabled>
+                <span class="fa fa-paper-plane"></span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="d-flex justify-content-between p-2">
+      <div>
+        <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize" (pageChange)="refreshCandidates()"></ngb-pagination>
+      </div>
+      <div>
+        <select class="custom-select" [(ngModel)]="pageSize" (ngModelChange)="refreshCandidates()">
+          <option [ngValue]="5">5 items per page</option>
+          <option [ngValue]="10">10 items per page</option>
+          <option [ngValue]="15">15 items per page</option>
+        </select>
+      </div>
+      <div>
+        <button class="btn btn-xs btn-primary">
+          <span class="fa fa-plus"></span> New
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

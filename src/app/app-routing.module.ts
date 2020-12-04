@@ -8,6 +8,14 @@ const routes: Routes = [
     path: 'exams',
     loadChildren: () => import('./exams/exams.module').then(m => m.ExamsModule),
   },
+  {
+    path: 'candidates',
+    loadChildren: () => import('./candidates/candidates.module').then(m => m.CandidatesModule),
+  },
+  {
+    path: 'security',
+    loadChildren: () => import('./security/security.module').then(m => m.SecurityModule),
+  },
   // {path: '', redirectTo: '/', pathMatch: 'full'},
   // {path: '**', redirectTo: '/', pathMatch: 'full'},
 ];
