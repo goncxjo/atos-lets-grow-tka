@@ -16,7 +16,8 @@ const routes: Routes = [
     path: 'security',
     loadChildren: () => import('./security/security.module').then(m => m.SecurityModule),
   },
-  // {path: '', redirectTo: '/', pathMatch: 'full'},
+  { path: 'admin', redirectTo: '/', pathMatch: 'full' },
+  { path: 'reports', redirectTo: '/', pathMatch: 'full' },
   // {path: '**', redirectTo: '/', pathMatch: 'full'},
 ];
 

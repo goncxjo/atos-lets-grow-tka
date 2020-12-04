@@ -6,16 +6,17 @@ import { UsersListComponent } from './users/users-list/users-list.component';
 
 const routes: Routes = [
   {
-    path: 'security/roles',
+    path: 'roles',
     component: RolesListComponent,
     resolve: {
       entity: GetRolesListResolver
     }
   },
   {
-    path: 'security/users',
+    path: 'users',
     component: UsersListComponent,
-  }
+  },
+  { path: '', redirectTo: 'roles', pathMatch: 'full' },
 ];
 
 @NgModule({

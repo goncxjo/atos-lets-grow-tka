@@ -16,7 +16,6 @@ import { LayoutModule } from "../layout/layout.module";
 import { ExamsRoutingModule } from './exams-routing.module';
 import { ExamsGroupButtonComponent } from './exams-group-button/exams-group-button.component';
 import { ExamFormComponent } from './exam-form/exam-form.component';
-import { NameContainsPipe } from './name-contains.pipe';
 import { NameStartsWithPipe } from './name-starts-with.pipe';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExamsListComponent } from './exams-list/exams-list.component';
@@ -28,7 +27,6 @@ import { QuestionsListComponent } from './questions/questions-list/questions-lis
   declarations: [
     ExamsGroupButtonComponent,
     ExamFormComponent,
-    NameContainsPipe,
     NameStartsWithPipe,
     ExamsListComponent,
     ExamsEditComponent,

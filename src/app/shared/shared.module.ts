@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NameContainsPipe } from './name-contains.pipe';
 
 import { TimerComponent } from './timer/timer.component';
 
@@ -13,7 +14,8 @@ const PRIVATE_COMPONENTS = [
 ];
 
 const PUBLIC_COMPONENTS = [
-  TimerComponent
+  TimerComponent,
+  NameContainsPipe
 ]
 
 @NgModule({
